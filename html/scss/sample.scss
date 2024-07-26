@@ -1,0 +1,105 @@
+// @import './var.scss';
+// main{
+//     @include wrap;
+//     @include text(14px, 700);
+//     a{
+//         &::before{
+//             content: "";
+//             display: inline-block;
+//             width: 8px - 1px;
+//             height: 8px;
+//             background-color: $mainColor;
+//             border-radius: 50%;
+//             margin-right: 10px;
+//         }
+//     }
+// }
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    background-color: #000;
+    position: relative;
+    .container{
+        .fake{
+            background-color: #333;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.6s ease-in-out;
+            z-index: 1;
+        }
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            a{
+                display: block;
+                color: #fff;
+                line-height: 50px;
+            }
+        }
+        nav{
+            &:hover + .fake{
+                height: 254px;
+            }
+            .depth01{
+                display: flex;
+                &:hover .depth02{
+                    height: 254px;
+                }
+                > li{
+                    &:hover > a{
+                        background-color: #fff;
+                        color: #333;
+                    }
+                    position: relative;
+                    > a{
+                        display: block;
+                        color: #fff;
+                        line-height: 50px;
+                        padding: 0 30px;
+                    }
+                    .depth02{
+                        position: absolute;
+                        width: 100%;
+                        top:100%;
+                        left: 0;
+                        height: 0;
+                        overflow: hidden;
+                        background-color: #333;
+                        text-align: center;
+                        transition: all 0.6s ease-in-out;
+                        z-index: 2;
+                        li{
+                            &:last-child a{
+                                border-bottom: 0;
+                            }
+                            &:hover a{
+                                background-color: #fff;
+                                color: #333;
+                            }
+                            a{
+                                display: block;
+                                color: #fff;
+                                line-height: 50px;
+                                border-bottom: solid 1px #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
