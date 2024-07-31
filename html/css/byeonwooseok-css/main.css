@@ -35,8 +35,8 @@ ul{
     display: block;
     text-align: center;
     line-height: 100px;
-    color: #000;
-    border: solid 4px #000;
+    color: #008000;
+    border: solid 4px #008000;
 }
 #header .menu01{
     width: 98%;
@@ -53,7 +53,7 @@ ul{
 }
 #header .menu01 > li > a{
     display: block;
-    color: #000;
+    color: #008000;
     line-height: 50px;
     font-weight: bold;
 }
@@ -68,7 +68,7 @@ ul{
 }
 #header .menu02 li a{
     display: block;
-    color: #000;
+    color: #008000;
     line-height: 50px;
     font-weight: bold;
 }
@@ -79,7 +79,7 @@ ul{
 #se-bestimg .bestimg{
     width: 80%;
     height: 100px;
-    background-color: #000;
+    background-color: #008000;
     margin: 0 auto;
 }
 #se-bestimg .bestimg li{
@@ -105,7 +105,7 @@ ul{
     display: block;
     overflow: hidden;
     border-radius: 20px;
-    border: solid 2px #000;
+    border: solid 2px #008000;
     box-shadow: 6px 6px 6px #ccc;
 }
 #card .one li span img{
@@ -117,7 +117,7 @@ ul{
 #card .one li a{
     display: block;
     line-height: 50px;
-    color: #000;
+    color: #fff000;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -127,15 +127,15 @@ ul{
     display: inline-block;
     width: 10px;
     height: 10px;
-    border-top: solid 4px #000;
-    border-right: solid 4px #000;
+    border-top: solid 4px #fff000;
+    border-right: solid 4px #fff000;
     transform: rotate(45deg);
 }
 #card .one li:hover span img{
     transform: scale(1.2);
 }
 #card .one li:hover a{
-    color: #00F;
+    color: #333;
     font-size: 20px;
 }
 #card .one li:nth-child(1) span{
